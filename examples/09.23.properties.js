@@ -15,7 +15,7 @@
          else if (arguments.length == 1 && Array.isArray(arguments[0]))
              names = arguments[0];   // Or an array of names
          else                        // Or the names in the argument list
-             names = Array.prototype.splice.call(arguments, 0);
+             names = Array.prototype.slice.call(arguments, 0);
 
          // Return a new Properties object representing the named properties
          return new Properties(this, names);

@@ -2,7 +2,7 @@
 function freezeProps(o) {
     var props = (arguments.length == 1)              // If 1 arg
         ? Object.getOwnPropertyNames(o)              //  use all props
-        : Array.prototype.splice.call(arguments, 1); //  else named props
+        : Array.prototype.slice.call(arguments, 1); //  else named props
     props.forEach(function(n) { // Make each one read-only and permanent
         // Ignore nonconfigurable properties
         if (!Object.getOwnPropertyDescriptor(o,n).configurable) return;
