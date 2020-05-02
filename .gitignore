@@ -1,0 +1,22 @@
+# emacs
+*~
+\#*\#
+*.elc
+*.elc
+
+# jetbrain
+.idea
+*.iml
+*.cbp
+.gradle
+local.properties
+.externalNativeBuild
+.cxx
+
+# mac
+.DS_Store
+.AppleDouble
+.LSOverride
+.localized
+Icon
+._*
